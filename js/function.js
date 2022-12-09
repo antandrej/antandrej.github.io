@@ -1,7 +1,14 @@
-$('#mySection1').on('inview', function(event, isInView) {
-  if (isInView) {
-    $('#myNavOption1').addClass('active');
+
+
+
+/*
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
   } else {
-    $('#myNavOption1').removeClass('active');
+    navbar.classList.remove("sticky");
   }
-});
+}*/

@@ -2,24 +2,44 @@
 <html>
 <head>
 	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">     
 </head>
 <body>
-	<header>
-		<div id="upperheader"><img id="headerimg" src="pictures/wp2.jpg">
-			<h1>Andrej Antanaskovic</h1>
-			<h2>Game Developer</h2>
-		</div>
+	<div id="upperheader"><img id="headerimg" src="pictures/wp2.jpg">
+		<h1>Andrej Antanaskovic</h1>
+		<h2>Game Developer</h2>
+	</div>		
+	<div id="navbar"> 
 		<center>
-			<div id="navbar"> 
-				<ul class="reveal-text">
-					<li><a class="active" href="#projects">Home</a></li>
-					<li><a href="#currentp">Current Projects</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul> 
-			</div>
+			<ul class="reveal-text">
+				<li><a class="active" href="#projects">Home</a></li>
+				<li><a href="#currentp">Current Projects</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul> 
 		</center>
-	</header>
+	</div>	
+	<div id="content">
+		<h3>Sticky Navigation Example</h3>
+		  <p id="projects">PROJECTSThe navbar will stick to the top when you reach its scroll position.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p id="currentp">CURRENT text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p id="about">ABOUTSome text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p id="contact">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	</div>
+	<script type = "text/javascript" language = "javascript">
+         var navItems = document.querySelectorAll("navbar");
+for (var i = 0; i < navItems.length; i++) {
+   navItems[i].addEventListener("click", function() {
+      this.classList.add("active");
+   });
+}
+      </script>
+</body>
+
 </body>
 </html>
