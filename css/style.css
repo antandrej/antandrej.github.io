@@ -12,6 +12,9 @@ body{
 	overflow: clip;
 	contain: paint;
 }
+p, h3, a{
+	font-family: verdana;
+}
 header{
 	overflow: clip;
 	contain: paint;
@@ -33,15 +36,17 @@ h1{
 	font-size: 40px;
 	color: #FFF;
 	font-family: verdana;
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
   	text-shadow:
     -1.5px -1.5px 0 #000,
     1.5px -1.5px 0 #000,
     -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000; 
+}
+.headertext{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 h2{
 	font-size: 30px;
@@ -55,7 +60,7 @@ h2{
     -1.5px -1.5px 0 #000,
     1.5px -1.5px 0 #000,
     -1.5px 1.5px 0 #000,
-    1.5px 1.5px 0 #000; 
+    1.5px 1.5px 0 #000;
 }
 #navbar{
 	z-index: 999;
@@ -131,8 +136,7 @@ li a:hover {
 		transform-origin: 0 50%;
 		pointer-events: none;
 		animation-name: text-revealer;
-	}
-	
+	}	
 }
 @keyframes clip-text {
 	from {
@@ -166,4 +170,75 @@ p{
 }
 #content{
 	padding-top: 15px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+#mprojects{
+	width: 90%;
+	display: grid;
+	justify-content: center;
+}
+#section1{
+	scroll-margin-top: 80px;
+}
+#section2{
+	scroll-margin-top: 80px;
+}
+#section3{
+	scroll-margin-top: 80px;
+}
+#section4{
+	scroll-margin-top: 80px;
+}
+.projects{
+	display: grid;
+	margin-bottom: 7%;
+	width: 750px;
+	height: 500px;
+	background-color: #ebebeb;
+	border-radius: 2%;
+}
+.cover{
+	height: 450px;
+	width: 500px;
+	padding-top: 2%;
+	padding-left: 2%;
+	filter: grayscale(100%);
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.cover:hover{
+	filter: grayscale(0%);
+}
+.gamename{
+	width: 120px;
+	height: 36px;
+	font-size: 30px;
+	transform: translate(475%, -800%);
+	text-align: center;
+	overflow-y: visible;
+	color: #111;
+}
+.readmore{
+	display: grid;
+	font-size: 16px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 50px;
+	background-color: #993F37;
+	padding: 0;
+	margin-left: 5px;
+	transform: translate(475%, -550%);
+	-webkit-transition: all 0.2s ease-in;
+}
+.readmore:hover{
+	color: white;
+	cursor: pointer;
+}
+#cprojects{
+	width: 90%;
+	display: grid;
+	justify-content: center;
 }
