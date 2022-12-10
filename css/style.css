@@ -296,13 +296,19 @@ p{
   	grid-row: 4;
   	column-gap: 5%;
   	margin-top: auto;
+  	border-top: 1px solid black;
+  	border-left: 1px solid black;
+  	border-right: 1px solid black;
+  	border-radius: 5px;
 }
 .screenshots img{
 	width: 130%;
 	height: 97%;
 	min-height: 97%;
 	grid-row: 1;
-	border: 0.5px solid black;
+	border-right: 0.33px solid black;
+	border-left: 0.33px solid black;
+	border-bottom: 0.33px solid black;
 	filter: grayscale(70%);
 	border-radius: 5px;
 	box-shadow: 1px 1px 8px #666666;
