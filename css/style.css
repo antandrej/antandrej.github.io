@@ -240,7 +240,7 @@ p{
 	border-radius: 10px;
 }
 .gamename{
-	width: 120px;
+	width: 13%;
 	height: 36px;
 	font-size: 30px;
 	/*
@@ -265,8 +265,8 @@ p{
 	justify-content: center;
 	align-items: center;
 	width: 80%;
-	height: 55%;
-	background-color: #993F37;
+	height: 20%;
+	/*background-color: #993F37;*/
 	padding: 0;
 	margin-left: 5px;/*
 	-webkit-transition: all 0.2s ease-in;
@@ -280,7 +280,13 @@ p{
 .readmore:hover{
 	color: white;
 	cursor: pointer;*/
-}
+}/*
+iframe{
+	width: 550px;
+	height: 165px;
+	background-color: rgba(255, 255, 255, 0);
+
+}*/
 #cprojects{
 	width: 100%;
 	margin-left: auto;
