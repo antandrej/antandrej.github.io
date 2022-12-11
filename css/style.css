@@ -194,7 +194,7 @@ p{
 	grid-template-columns: 1fr;
 	row-gap: 2%;
 	justify-content: center;
-	margin-bottom: 10%;
+	margin-bottom: 150px;
 }
 #section1{
 	scroll-margin-top: 80px;
