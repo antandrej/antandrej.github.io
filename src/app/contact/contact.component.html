@@ -1,0 +1,35 @@
+<div id="contact" class="section">
+    <h1 style="text-align: center;" id="section4" class="page-section" #section4>Contact Me</h1>
+    <p style="text-align: center;" class="contactinfo">Should you need any further information, please do not hesitate
+        to contact me.</p>
+    <div id="contactcontainer">
+
+        <div id="submitted">
+            <p style="text-align: center;" id="submitted-text">I recieved your submission!</p>
+        </div>
+        <div id="waiting">
+            <p style="text-align: center;" id="waiting-text">Your submission is being processed...</p>
+        </div>
+
+        <form name="gform" id="gform" enctype="text/plain"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdJkB3bbafVoHb0rWqTV9bYpNhPrHtjJYnDQ8ogcp5ASj3nlQ/formResponse?"
+            target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="form-group">
+                <input class="input-field" type="text" name="entry.870316514" id="entry.870316514" required
+                    placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="email" name="entry.1555796071" id="entry.1555796071" required
+                    placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea id="msg" class="input-field" type="text" name="entry.2014920645" id="entry.2014920645"
+                    required placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="submit button" type="submit" value="Send Message">
+            </div>
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    </div>
+</div>

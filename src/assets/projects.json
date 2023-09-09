@@ -1,0 +1,62 @@
+[
+    {
+        "image": "../../assets/covers/BusCover.png",
+        "name": "Rate A Bus",
+        "description": "Developed a seamless web app with Angular on the frontend, Node.js on the backend, and PostgreSQL as the database. Simplifying the process of sharing and accessing valuable insights on bus lines, making public transportation experiences more user-friendly.",
+        "link": "",
+        "screenshots": [
+            "../../assets/screenshots/OceniAutobus/s1.png",
+            "../../assets/screenshots/OceniAutobus/s2.png",
+            "../../assets/screenshots/OceniAutobus/s3.png",
+            "../../assets/screenshots/OceniAutobus/s4.png",
+            "../../assets/screenshots/OceniAutobus/s5.png",
+            "../../assets/screenshots/OceniAutobus/s6.png"
+        ],
+        "type": "web"
+    },
+    {
+        "image": "../../assets/covers/TCover.jpg",
+        "name": "TANKS!",
+        "description": "Enjoy a local multiplayer top-down tank shooter I crafted in Unity with C#. This game showcases strategic gameplay and offers thrilling battles. Jump into the action and challenge your friends to epic tank battles. I'm excited for you to experience it!",
+        "link": "https://antandrej.itch.io/tanks",
+        "screenshots": [
+            "../../assets/screenshots/Tanks!/s1.jpg",
+            "../../assets/screenshots/Tanks!/s2.jpg",
+            "../../assets/screenshots/Tanks!/s3.jpg",
+            "../../assets/screenshots/Tanks!/s4.jpg",
+            "../../assets/screenshots/Tanks!/s5.jpg",
+            "../../assets/screenshots/Tanks!/s6.jpg"
+        ],
+        "type": "game"
+    },
+    {
+        "image": "../../assets/covers/CCover.png",
+        "name": "Go Cube",
+        "description": "Check out my game inspired by Brackeys' tutorials on YouTube! It's a fun and simple game where you control a sliding cube on an adventure. Collect coins to earn stars, but watch out for obstacles along the way. See if you can beat your high score and have a blast sliding through the challenges!",
+        "link": "https://antandrej.itch.io/gocube",
+        "screenshots": [
+            "../../assets/screenshots/GoCube/s1.png",
+            "../../assets/screenshots/GoCube/s2.png",
+            "../../assets/screenshots/GoCube/s3.png",
+            "../../assets/screenshots/GoCube/s4.png",
+            "../../assets/screenshots/GoCube/s5.png",
+            "../../assets/screenshots/GoCube/s6.png"
+        ],
+        "type": "game"
+    },
+    {
+        "image": "../../assets/covers/SCover.jpg",
+        "name": "Shooter / Save Him!",
+        "description": "Started a passion project a few years ago—an ambitious FPS game. While the project was challenging and ultimately paused, it served as a valuable learning experience, pushing my skills and creativity in game development. Though unfinished, it remains a testament to my dedication and determination to tackle complex projects.",
+        "link": "https://antandrej.itch.io/shooter",
+        "screenshots": [
+            "../../assets/screenshots/Shooter/s1.jpg",
+            "../../assets/screenshots/Shooter/s2.jpg",
+            "../../assets/screenshots/Shooter/s3.jpg",
+            "../../assets/screenshots/Shooter/s4.jpg",
+            "../../assets/screenshots/Shooter/s5.jpg",
+            "../../assets/screenshots/Shooter/s6.jpg"
+        ],
+        "type": "game"
+    }
+]

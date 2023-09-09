@@ -1,1 +1,232 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+html {
+    scroll-behavior: auto;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+::selection {
+    background: #e66565;
+    color: white;
+}
+
+body {
+    background-color: #E8E9EE;
+}
+
+p,
+h3,
+a {
+    font-family: 'Roboto Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.skew-cc {
+    border: none;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, #E8E9EE 49%, #F3F4F6 50%);
+}
+
+.skew-c {
+    border: none;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, #F3F4F6 49%, #E8E9EE 50%);
+}
+
+.page-section {
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    margin-bottom: 150px;
+    position: relative;
+    color: #efefef;
+    text-shadow:
+        -1.5px -1.5px 0 #00000073,
+        1.5px -1.5px 0 #00000073,
+        -1.5px 1.5px 0 #00000073,
+        1.5px 1.5px 0 #00000073;
+}
+
+#section1 {
+    scroll-margin-top: 80px;
+}
+
+#section2 {
+    scroll-margin-top: 80px;
+}
+
+#section3 {
+    scroll-margin-top: 80px;
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+#section4 {
+    scroll-margin-top: 80px;
+    padding-top: 75px;
+    padding-bottom: 175px;
+}
+
+.projects:nth-of-type(2n+1) {
+    animation: rotateReveal 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.projects:nth-of-type(2n) {
+    animation: rotateRevealInverse 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.page-section {
+    animation: topReveal 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.menu {
+    animation: bottomReveal 0.33s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.icon {
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.67, 1.18, 0.91, 1.15) both;
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.67, 1.18, 0.91, 1.15) both;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* A N I M A T I O N S */
+
+@keyframes pulse {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-fwd-center {
+    0% {
+        transform: translate(-50%, -50%) scale(0.75);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateReveal {
+    0% {
+        transform: translate(0, 0) perspective(400px) rotateY(10deg);
+    }
+
+    100% {
+        transform: translate(0, 0) perspective(400px) rotateY(-1deg);
+    }
+}
+
+@keyframes rotateRevealInverse {
+    0% {
+        transform: translate(0, 0) perspective(400px) rotateY(-10deg);
+    }
+
+    100% {
+        transform: translate(0, 0) perspective(400px) rotateY(1deg);
+    }
+}
+
+@keyframes bottomReveal {
+    0% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes topReveal {
+    0% {
+        transform: translate(0, -150%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

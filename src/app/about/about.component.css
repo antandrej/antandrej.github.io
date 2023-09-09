@@ -1,0 +1,269 @@
+.cover {
+    height: 450px;
+    width: 500px;
+    filter: grayscale(0%);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    box-shadow: 1px 1px 8px #666666;
+}
+
+.cover:hover {
+    filter: grayscale(0%);
+    border-radius: 15px;
+    box-shadow:
+        3.9px 4.1px 11.8px rgba(0, 0, 0, 0.21),
+        8.7px 9.2px 33.8px rgba(0, 0, 0, 0.138),
+        20px 21px 257px rgba(0, 0, 0, 0.118);
+}
+
+.gamename {
+    height: 36px;
+    font-size: 30px;
+    text-align: center;
+    overflow-y: visible;
+    color: #efefef;
+    margin: 0;
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    justify-self: center;
+    white-space: nowrap;
+}
+
+.desc {
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    padding: 0;
+    margin-left: 5px;
+    grid-column: 2 / span 4;
+    grid-row: 2;
+    justify-self: center;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    background-color: #E8E9EE;
+}
+
+#aboutcontent {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #993F37, #333d51);
+    width: 80% !important;
+    row-gap: 5%;
+    height: 90vh;
+    align-items: center;
+    align-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.aboutimg {
+    grid-area: 2 / 3 / 5 / 6;
+    width: 475px;
+    height: 675px;
+    object-fit: cover;
+}
+
+.aboutname {
+    grid-area: 1 / 1 / 2 / 3;
+    padding-right: 50px;
+}
+
+.aboutdesc {
+    grid-area: 2 / 1 / 5 / 3;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding-right: 50px;
+    color: #efefef;
+    border-right: 3px #993F37 double;
+}
+
+/* */
+
+@media only screen and (max-width: 1336px) {
+    .desc {
+        font-size: 17px;
+        width: auto;
+    }
+
+    .cover {
+        height: 350px;
+        width: 400px;
+    }
+
+    .projects {
+        margin-bottom: 25%;
+    }
+
+    .aboutimg {
+        width: 430px;
+        height: 575px;
+    }
+
+    .aboutdesc {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1237px) {
+    .aboutdesc {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .aboutimg {
+        width: 400px;
+        height: 550px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .aboutdesc {
+        border: none;
+    }
+
+    .aboutname {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1131px) {
+    .aboutdesc {
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1116px) {
+    .aboutdesc {
+        font-size: 13px;
+        width: auto;
+    }
+
+    .aboutname {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 964px) {
+    .cover {
+        height: 300px;
+        width: 350px;
+        grid-row: 2;
+    }
+
+    .projects {
+        margin-bottom: 30%;
+    }
+
+    .aboutimg {
+        grid-area: 2 / 3 / 5 / 6;
+        width: 400px;
+        height: 575px;
+    }
+
+    .aboutdesc {
+        width: 80%;
+    }
+
+    .aboutname {
+        white-space: unset;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .gamename {
+        display: none;
+    }
+
+    .desc {
+        font-size: 15px;
+        width: auto;
+        grid-row: 2;
+        grid-column: 1 / span 5;
+        padding: 0;
+        border: none;
+    }
+
+    .cover {
+        height: 300px;
+        width: 350px;
+        grid-row: 1;
+        grid-column: 1 / span 5;
+        justify-self: center;
+    }
+
+    .button {
+        grid-column: 1 / span 5;
+        justify-self: center;
+    }
+
+    #aboutcontent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr repeat(4, 1fr);
+        grid-row-gap: 2%;
+        margin-top: 20%;
+    }
+
+    .aboutimg {
+        grid-area: 1 / 1 / 4 / 2;
+        width: 375px;
+        height: 500px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .aboutdesc {
+        grid-area: 4 / 1 / 6 / 2;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    .aboutimg {
+        width: 325px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 436px) {
+    .aboutimg {
+        width: 300px;
+        height: 425px;
+    }
+
+    #aboutcontent {
+        width: 90% !important;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .aboutimg {
+        width: 275px;
+        height: 400px;
+    }
+}

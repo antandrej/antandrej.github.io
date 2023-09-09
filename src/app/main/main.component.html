@@ -1,0 +1,72 @@
+<div id="content">
+    <div class="section" style="background-color: #E8E9EE;">
+        <h1 style="text-align: center;" id="section1" class="page-section" #section1>My Projects</h1>
+        <div class="projects" *ngFor="let project of projects">
+            <img class="cover" [src]="project.image">
+            <h3 class="gamename">{{project.name}}</h3>
+            <p class="desc">{{project.description}}</p>
+
+            <a *ngIf="project.type == 'game'" class="button" target="_blank" [href]="project.link">Play/Download</a>
+            <a *ngIf="project.type == 'web'" class="button" target="_blank" [href]="project.link">Visit
+                Website/Demo</a>
+
+            <div class="screenshots">
+                <img (click)="openModal(project.screenshots[0])" [src]="project.screenshots[0]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(project.screenshots[1])" [src]="project.screenshots[1]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(project.screenshots[2])" [src]="project.screenshots[2]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(project.screenshots[3])" [src]="project.screenshots[3]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(project.screenshots[4])" [src]="project.screenshots[4]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(project.screenshots[5])" [src]="project.screenshots[5]"
+                    class="screenshot modal-button">
+            </div>
+        </div>
+    </div>
+
+    <div class="skew-cc"></div>
+
+    <div class="section2" style="background-color: #F3F4F6;">
+        <h1 style="text-align: center;" id="section2" class="page-section" #section2>Current Projects</h1>
+
+        <div class="projects" *ngFor="let currentProject of currentProjects">
+            <img class="cover" [src]="currentProject.image">
+            <h3 *ngIf="currentProject.type == '?'" style="padding: 0;" class="gamename">{{currentProject.name}}</h3>
+            <h3 *ngIf="currentProject.type != '?'" class="gamename">{{currentProject.name}}</h3>
+            <p class="desc">{{currentProject.description}}</p>
+
+            <a *ngIf="currentProject.type == 'game'" class="button" target="_blank"
+                [href]="currentProject.link">Play/Download</a>
+            <a *ngIf="currentProject.type == 'web'" class="button" target="_blank" [href]="currentProject.link">Visit
+                Website/Demo</a>
+            <a *ngIf="currentProject.type == '?'" class="button" target="_blank">Stay Tuned</a>
+
+            <div class="screenshots">
+                <img (click)="openModal(currentProject.screenshots[0])" [src]="currentProject.screenshots[0]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(currentProject.screenshots[1])" [src]="currentProject.screenshots[1]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(currentProject.screenshots[2])" [src]="currentProject.screenshots[2]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(currentProject.screenshots[3])" [src]="currentProject.screenshots[3]"
+                    class="screenshot modal-button">
+                <img (click)="openModal(currentProject.screenshots[4])" [src]="currentProject.screenshots[4]"
+                    class="screenshot modal-button ">
+                <img (click)="openModal(currentProject.screenshots[5])" [src]="currentProject.screenshots[5]"
+                    class="screenshot modal-button modal-button">
+            </div>
+        </div>
+    </div>
+
+    <div class="skew-c"></div>
+
+    <div id="modal" class="modal modal-parent">
+        <div class="modal-content">
+            <a (click)="closeModal()" class="close">&times;</a>
+            <img id="modal-img">
+        </div>
+    </div>
+</div>

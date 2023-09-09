@@ -1,13 +1,84 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <app-root></app-root>
+  <script>
+    $(document).ready(function () {
+      var btns = $(".menu");
+      $('.menu-button-container').click(function () {
+        $('.icon').toggle("slow");
+      });
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click",
+          function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+      }
+
+      $(window).scroll(function () {
+        var distance = $(window).scrollTop();
+        $('.page-section').each(function (i) {
+          if ($(this).position().top <= distance + 250) {
+            $('.menu a.active').removeClass('active');
+            $('.menu a').eq(i).addClass('active');
+          }
+        });
+      }).scroll();
+    });
+  </script>
+  <script src="https://assets.website-files.com/5f4485043234b224bc5bbb3b/js/webflow.bedcda718.js"
+    type="text/javascript"></script>
+  <script>
+    Webflow.push(function () {
+      $('.modal-button').click(function (e) {
+        e.preventDefault();
+        $('body').css('overflow', 'hidden');
+      }); $('.close').click(function (e) {
+        e.preventDefault();
+        $('body').css('overflow', 'auto');
+      });
+    });
+  </script>
+  <script type="text/javascript">var submitted=false;</script>
+  <script>
+      $(document).ready(function() {
+          $('#gform').on('submit', function() {
+      $('.submit').prop('disabled',true);
+      $('.submit').fadeOut(750);
+      $('#waiting-text').css('visibility', 'visible');
+      window.setTimeout(function(){ 
+        $('.submit').prop('disabled',false);
+        $('#submitted-text').css('visibility', 'visible');
+        $('.input-field').val('');
+      },1250);
+    });
+  });
+  </script>
 </body>
+
 </html>

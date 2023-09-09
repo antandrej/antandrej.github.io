@@ -1,0 +1,214 @@
+#contact {
+    width: 100%;
+    min-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 128px;
+    background-color: #F3F4F6;
+}
+
+#contactcontainer {
+    align-self: center;
+    margin-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: repeat(2, 0.5fr) repeat(4, 1fr);
+    grid-row-gap: 50px;
+    justify-items: center;
+    color: #333;
+}
+
+.contactinfo {
+    font-size: 15px;
+}
+
+.form-group:nth-of-type(1)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f4ff';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.form-group:nth-of-type(2)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f1d8';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.form-group:nth-of-type(3)::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f27a';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.form-group {
+    align-self: center;
+    width: 25%;
+}
+
+input,
+textarea {
+    width: 85%;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px black solid;
+    border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 00%, rgb(0, 0, 0)50%, rgba(0, 0, 0, 0) 80%) 1;
+    background-color: transparent;
+    transition: all 0.25s ease-out;
+}
+
+input:not(.submit):focus {
+    outline: none;
+    border-bottom: 1px #993F37 solid;
+    border-image: linear-gradient(90deg, rgba(153, 63, 55, 0) 0%, #993F37 00%, #993F37 50%, rgba(153, 63, 55, 0) 80%) 1;
+    width: 55%;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    height: 20%;
+    background: rgb(153, 63, 55);
+    margin: 0;
+    background-image: -webkit-linear-gradient(top, #8f352f, #b83e35);
+    background-image: -moz-linear-gradient(top, #8f352f, #b83e35);
+    background-image: -ms-linear-gradient(top, #8f352f, #b83e35);
+    background-image: -o-linear-gradient(top, #8f352f, #b83e35);
+    background-image: linear-gradient(to bottom, #8f352f, #b83e35);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    text-shadow: 1px 1px 5px #000000;
+    -webkit-box-shadow: 1px 1px 8px #666666;
+    -moz-box-shadow: 1px 1px 8px #666666;
+    box-shadow: 1px 1px 8px #666666;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    justify-self: center;
+    grid-column: 2 / span 4;
+    grid-row: 3;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    color: black;
+    text-shadow: 0.5px 0.5px 5px #FFF;
+    cursor: pointer;
+}
+
+.submit {
+    border: none;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: #333333c2;
+}
+
+#msg:focus {
+    width: 90%;
+}
+
+textarea {
+    resize: none;
+    height: 20px;
+    scrollbar-width: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea:focus {
+    outline: none;
+    height: 40px;
+    border-image: linear-gradient(90deg, rgba(153, 63, 55, 0) 0%, #993F37 00%, #993F37 50%, rgba(153, 63, 55, 0) 80%) 1;
+}
+
+#submitted-text {
+    visibility: hidden;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+#waiting-text {
+    visibility: hidden;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.form-text {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+/* */
+@media only screen and (max-width: 1610px) {
+    .form-group {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .form-group {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .form-group {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .form-group {
+        width: 75%;
+    }
+
+    input,
+    textarea {
+        border-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 00%, rgb(0, 0, 0)80%, rgba(0, 0, 0, 0) 100%) 1;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .form-group {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .form-group {
+        width: 100%;
+    }
+}
