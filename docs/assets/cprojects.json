@@ -1,0 +1,17 @@
+[
+    {
+        "image": "../../assets/covers/coming.jpg",
+        "name": "Coming Soon",
+        "description": "                                                                                                                                                                                                                                                                                                                                        ",
+        "link": "",
+        "screenshots": [
+            "../../assets/screenshots/ComingSoon/coming.jpg",
+            "../../assets/screenshots/ComingSoon/coming.jpg",
+            "../../assets/screenshots/ComingSoon/coming.jpg",
+            "../../assets/screenshots/ComingSoon/coming.jpg",
+            "../../assets/screenshots/ComingSoon/coming.jpg",
+            "../../assets/screenshots/ComingSoon/coming.jpg"
+        ],
+        "type": "?"
+    }
+]
