@@ -3,7 +3,7 @@
         "image": "../../assets/covers/BusCover.png",
         "name": "Rate A Bus",
         "description": "Developed a seamless web app with Angular on the frontend, Node.js on the backend, and PostgreSQL as the database. Simplifying the process of sharing and accessing valuable insights on bus lines, making public transportation experiences more user-friendly.",
-        "link": "",
+        "link": "https://oceniautobus.netlify.app/",
         "screenshots": [
             "../../assets/screenshots/OceniAutobus/s1.png",
             "../../assets/screenshots/OceniAutobus/s2.png",
